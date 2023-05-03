@@ -1,8 +1,12 @@
 *{
     font-family: 'PT Sans', sans-serif;
 }
-
-
+h1 ,p {
+    text-transform: uppercase;
+}
+section{
+    background: linear-gradient(black, silver);
+}
 
 header{
     height: 556px;
@@ -10,7 +14,7 @@ header{
    
 }
 .about{
-    padding-top: 250px;
+    padding-top: 300px;
 }
 .container
 header .logo h2{
@@ -40,6 +44,14 @@ header .logo h2{
 }
 .title {
     margin-top: 25px;
+    text-transform: uppercase;
+}
+.info-p{
+    margin: auto;
+    line-height: 30px;
+    display: block;
+    width: 80%;
+    padding-top: 20px;
 }
 .home-item p{
     font-size: 20px;
@@ -169,7 +181,7 @@ header .logo h2{
 }
 @media(max-width:992px){
     .title1{height: 40px;}
-    .ro{display: block;}
+   
     .row1{width: 400px;}
     .row2 img{
         width: 327px;
@@ -208,7 +220,7 @@ header .logo h2{
     visibility: hidden;
     transition: cubic-bezier(0, -0.18, 0.07, 0.7) 0.7s;
     transform: scale3d(1,0,0);
-   padding: 50px;
+   padding: 60px;
 }
 .front-end:hover h1{
     visibility:visible;
@@ -274,10 +286,15 @@ header .logo h2{
 }
 .icons-rigester{
     position: absolute;
-    top: 15px;
-    left: 610px;
-    width: 80px;
-    height: 80px;
+    top: 8px;
+    left: 615px;
+    width: 60px;
+    height: 60px;
+}
+@media(max-width:768px){
+    .icons-rigester{
+        left: 345px;
+    }
 }
 @media(max-width:575px){
     .form-register{
@@ -287,9 +304,6 @@ header .logo h2{
            margin: 20px;
             margin-bottom: 38px;
             margin-top: 70px;
-        }
-        .icons-rigester{
-            left: 170px;
         }
         
 }
@@ -351,15 +365,15 @@ header .logo h2{
        padding-top:10px;
     }
     .icons-rigester{
-        left: 240px;
+        left: 180px;
     }
-   
-}
-@media(min-width:575px){
-    .icons-rigester{
-        left: 400px;
+    .ro{display: block;}
+    
+    .about{
+        padding-top: 100px;
     }
 }
+
 .footer{
     background-color: silver;
     z-index: 3;
